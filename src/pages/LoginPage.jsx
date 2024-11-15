@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import loginIcon from "../assets/images/auth_illustration.png";
 
 export default function LoginPage() {
@@ -58,12 +59,12 @@ export default function LoginPage() {
             <div className="py-4 lg:py-6">
               <p className="text-center text-xs text-gray-600/95 lg:text-sm">
                 Don’t have account?
-                <a
+                <Link
                   className="text-white transition-all hover:text-lwsGreen hover:underline"
-                  href="/registration.html"
+                  to="/register"
                 >
                   Create New
-                </a>
+                </Link>
               </p>
             </div>
           </div>
